@@ -16,7 +16,7 @@
     setTimeout(async () => {
       let data = await getAdvice();
       adviceId.innerText = data.id;
-      adviceText.innerText = data.advice;
+      adviceText.innerText = `"${data.advice}"`;
       showLoader(false);
     }, 1000);
   }
